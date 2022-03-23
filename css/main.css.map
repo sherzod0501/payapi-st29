@@ -7,10 +7,13 @@
         "../sass/_fonts.scss",
         "../sass/_variables.scss",
         "../sass/_general.scss",
-        "../sass/blocks/_blocks.scss",
-        "../sass/blocks/_header.scss",
-        "../sass/blocks/_main.scss",
-        "../sass/blocks/_footer.scss"
+        "../sass/_pages.scss",
+        "../sass/about/_index.scss",
+        "../sass/about/blocks/_blocks.scss",
+        "../sass/pricing/_index.scss",
+        "../sass/pricing/blocks/_blocks.scss",
+        "../sass/home/_index.scss",
+        "../sass/home/blocks/_blocks.scss"
     ],
     "names": [],
     "file": "main.css"
