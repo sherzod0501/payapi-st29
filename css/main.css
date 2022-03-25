@@ -18,8 +18,7 @@ h1 {
 }
 
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   height: 0;
   overflow: visible;
 }
@@ -97,24 +96,24 @@ select {
   text-transform: none;
 }
 
-[type="button"],
-[type="reset"],
-[type="submit"],
+[type=button],
+[type=reset],
+[type=submit],
 button {
   -webkit-appearance: button;
 }
 
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner,
 button::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring,
 button:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
@@ -124,8 +123,7 @@ fieldset {
 }
 
 legend {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   color: inherit;
   display: table;
   max-width: 100%;
@@ -141,24 +139,23 @@ textarea {
   overflow: auto;
 }
 
-[type="checkbox"],
-[type="radio"] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
   padding: 0;
 }
 
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
   height: auto;
 }
 
-[type="search"] {
+[type=search] {
   -webkit-appearance: textfield;
   outline-offset: -2px;
 }
 
-[type="search"]::-webkit-search-decoration {
+[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -186,8 +183,7 @@ template {
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -216,4 +212,182 @@ body {
           clip-path: inset(50%);
   margin: -1px;
 }
-/*# sourceMappingURL=main.css.map */
+
+.hero {
+  margin-top: 80px;
+  max-width: 1140px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero_left {
+  max-width: 546px;
+  height: 345px;
+}
+.hero_sar {
+  font-family: DM Serif Display;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 72px;
+  letter-spacing: -0.5538461804px;
+  text-align: left;
+  margin: 0;
+  color: #36536B;
+  margin-bottom: 37px;
+}
+.hero_input {
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  margin-bottom: 16px;
+}
+.hero_text--input {
+  font-family: Public Sans;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: left;
+  width: 400px;
+  height: 48px;
+  padding: 16px 27px;
+  border-radius: 24px;
+  background-color: #fff;
+  cursor: pointer;
+  border: transparent;
+}
+.hero_padding {
+  position: absolute;
+  margin-left: 260px;
+  padding: 16px 24px;
+  background-color: #BA4270;
+  border-radius: 24px;
+  font-family: Public Sans;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: -0.115384616px;
+  text-align: left;
+  color: #fff;
+  cursor: pointer;
+}
+.hero_padding:hover {
+  background-color: #DA6D97;
+}
+.hero_span {
+  font-family: Public Sans;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #6C8294;
+}
+.hero_text {
+  font-family: Public Sans;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-left: 10px;
+  color: #6C8294;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero {
+    margin: 0 98px;
+    margin-top: 62px;
+    display: flex;
+    flex-direction: column;
+  }
+  .hero_left {
+    order: 1;
+    width: 573px;
+  }
+  .hero_sar {
+    font-family: DM Serif Display;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: -0.369230777px;
+    text-align: center;
+  }
+  .hero_input {
+    margin: 0 auto;
+  }
+  .hero_text {
+    text-align: center;
+  }
+  .hero_right {
+    margin: 0 auto;
+  }
+  .hero_img {
+    max-width: 300px;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 535px) {
+  .hero {
+    margin: 0 auto;
+  }
+  .hero_left {
+    width: 430px;
+  }
+  .hero_sar {
+    font-size: 35px;
+  }
+  .hero_input {
+    width: 300px;
+  }
+  .hero_text--input {
+    font-size: 12px;
+  }
+  .hero_padding {
+    padding: 15px 14px;
+    margin-left: 200px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .hero_img {
+    margin-left: 50px;
+  }
+  .hero_sar {
+    font-family: "DM Serif Display";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: -0.2461538464px;
+    text-align: center;
+    width: 327px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
+  .hero_input {
+    display: flex;
+    flex-direction: column;
+    width: 327px;
+  }
+  .hero_text--input {
+    width: 327px;
+  }
+  .hero_padding {
+    width: 327px;
+    margin: 0;
+    margin-top: 70px;
+    text-align: center;
+  }
+  .hero_text {
+    margin-top: 100px;
+  }
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,211 @@
+.hero{
+    margin-top: 80px;
+    max-width: 1140px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    &_left{
+        max-width: 546px;
+        height: 345px;
+    }
+    
+    &_sar{
+        font-family: DM Serif Display;
+        font-size: 72px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 72px;
+        letter-spacing: -0.5538461804389954px;
+        text-align: left;
+        margin: 0;
+        color: #36536B;
+        margin-bottom: 37px;
+    }
+
+    &_input{
+        display: flex;
+        width: 400px;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+        margin-bottom: 16px;
+    }
+
+    &_text--input{
+        font-family: Public Sans;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 18px;
+        letter-spacing: 0px;
+        text-align: left;
+        width: 400px;
+        height: 48px;
+        padding: 16px 27px;
+        border-radius: 24px;
+        background-color: #fff;
+        cursor: pointer;
+        border: transparent;
+    }
+
+    &_padding{
+        position: absolute; 
+        margin-left: 260px;
+        padding: 16px 24px;
+        background-color: #BA4270;
+        border-radius: 24px;
+        font-family: Public Sans;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 18px;
+        letter-spacing: -0.11538461595773697px;
+        text-align: left;
+        color: #fff;
+        cursor: pointer;
+
+        &:hover{
+            background-color: #DA6D97;
+        }
+    }
+
+    &_span{
+        font-family: Public Sans;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 18px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #6C8294;
+    }
+    
+    &_text{
+        font-family: Public Sans;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin-left: 10px;
+        color: #6C8294;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .hero{
+        margin: 0 98px;
+        margin-top: 62px;
+        display: flex;
+        flex-direction: column;
+
+        &_left{
+            order: 1;
+            width: 573px;
+        }
+
+        &_sar{
+            font-family: DM Serif Display;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 56px;
+            letter-spacing: -0.3692307770252228px;
+            text-align: center;
+            
+        }
+
+        &_input{
+           margin: 0 auto;  
+        }
+
+        &_text{
+            text-align: center;
+        }
+
+        &_right{
+            margin: 0 auto;
+        }
+
+        &_img{
+            max-width: 300px;
+            height: auto;
+        }
+    }
+
+    
+}
+
+@media only screen and(max-width:535px) {
+    .hero{
+        margin: 0 auto;
+
+        &_left{
+            width: 430px;
+        }
+
+        &_sar{
+            font-size: 35px;
+        }
+
+        &_input{
+            width: 300px;
+        }
+        
+        &_text--input{
+            font-size: 12px;
+
+        }
+
+        &_padding{
+            padding: 15px 14px;
+            margin-left: 200px;
+        }
+    }
+}
+
+
+@media only screen and(max-width:375px) {
+     .hero{
+         &_img{
+             margin-left: 50px;
+         }
+
+         &_sar{
+            font-family: "DM Serif Display";
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 36px;
+            letter-spacing: -0.2461538463830948px;
+            text-align: center;            
+             width: 327px;
+             margin: 0 auto;
+             margin-bottom: 24px;
+         }
+
+         &_input{
+             display: flex;
+             flex-direction: column;
+             width: 327px;
+         }
+
+         &_text--input{
+            width: 327px;
+         }
+
+         &_padding{
+             width: 327px;
+             margin: 0;
+             margin-top: 70px;
+             text-align: center;
+         }
+
+         &_text{
+             margin-top: 100px;
+         }
+     }
+}
